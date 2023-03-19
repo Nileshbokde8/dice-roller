@@ -15,7 +15,7 @@
         .dice-container{
             background-color: bisque;
             width: 250px;
-            height: 400px;
+            height: 390px;
             display: block;
             margin: 0 auto;
             border-radius: 30px;
@@ -24,8 +24,10 @@
         .dice{
             height: 5opx;
             display: block;
-            margin: 50px auto;
+            margin:  auto;
+            margin-top: 50px;
             padding-top: 15px;
+            padding-bottom: 20px;
 
         }
         .btn{
@@ -40,10 +42,14 @@
             align-items: center;
             display: block;
             margin: 40px auto;
+            cursor: pointer;
+            box-shadow: 0 0 2px 3px red;
+            font-weight: bold;
         }
         .dice-number{
             text-align: center;
             font-size: 40px;
+            margin: 20px;
         }
 
 
@@ -55,7 +61,7 @@
 
         <img src="dice.png" class="dice" id="dice"/><hr><hr>
 
-        <h3 class="dice-number">0</h3>
+        <h3 class="dice-number">0</h3><hr><hr>
 
         <button class="btn"> ROLL IT 🎲</button>
     </div>
