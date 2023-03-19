@@ -73,36 +73,30 @@
         const min =1;
         const max =6;
         const number=Math.floor(Math.random() * (max-min+1))+min;
+        document.getElementById("dice-text").innerHTML = number;
+
         const diceImg = document.getElementById("dice");
-        const diceText= document.getElementById("dice-text");
         if (number==1){
             diceImg.src="dice.png";
-            diceText.innerHTML= 1;
-    
         }
+
         else if (number==2){
             diceImg.src="dice (1).png";
-            diceText.innerHTML= 2;
-    
         }
         else if (number==3){
             diceImg.src="dice (2).png";
-            diceText.innerHTML= 3;
     
         }
         else if (number==4){
             diceImg.src="dice (3).png";
-            diceText.innerHTML= 4;
     
         }
         else if (number==5){
             diceImg.src="dice (4).png";
-            diceText.innerHTML= 5;
     
         }
         else{
             diceImg.src="dice (5).png";
-            diceText.innerHTML= 6;
 
         }
     }
