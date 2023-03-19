@@ -61,7 +61,7 @@
 
         <img src="dice.png" class="dice" id="dice"/><hr><hr>
 
-        <h3 class="dice-number">0</h3><hr><hr>
+        <h3 class="dice-number" id="dice-text">0</h3><hr><hr>
 
         <button class="btn" onclick="roll()"> ROLL IT 🎲</button>
     </div>
@@ -74,28 +74,35 @@
         const max =6;
         const number=Math.floor(Math.random() * (max-min+1))+min;
         const diceImg = document.getElementById("dice");
+        const diceText= document.getElementById("dice-text");
         if (number==1){
             diceImg.src="dice.png";
+            diceText.innerHTML= 1;
     
         }
         else if (number==2){
             diceImg.src="dice (1).png";
+            diceText.innerHTML= 2;
     
         }
         else if (number==3){
             diceImg.src="dice (2).png";
+            diceText.innerHTML= 3;
     
         }
         else if (number==4){
             diceImg.src="dice (3).png";
+            diceText.innerHTML= 4;
     
         }
         else if (number==5){
             diceImg.src="dice (4).png";
+            diceText.innerHTML= 5;
     
         }
         else{
             diceImg.src="dice (5).png";
+            diceText.innerHTML= 6;
 
         }
     }
