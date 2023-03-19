@@ -63,10 +63,13 @@
 
         <h3 class="dice-number">0</h3><hr><hr>
 
-        <button class="btn"> ROLL IT 🎲</button>
+        <button class="btn" onclick="roll()"> ROLL IT 🎲</button>
     </div>
 
     <script type="text/javascript">
+
+        function roll(){
+
         const min =1;
         const max =6;
         const number=Math.floor(Math.random() * (max-min+1))+min;
@@ -94,6 +97,7 @@
             document.getElementById("dice").src="dice (5).png";
 
         }
+    }
         
     </script>
     
