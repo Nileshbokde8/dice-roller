@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dice Roller</title>
+
+    <style>
+        .dice{
+            height: 5opx;
+        }
+
+
+
+    </style>
 </head>
 <body>
+    <div class="dice-container">
+
+        <img src="dice.png" class="dice" id="dice"/>
+    </div>
+
+    <script type="text/javascript">
+        const min=1;
+        const max=6;
+        const number=Math.floor(Math.random() * (max-min+1))+min;
+        document.write("<h1>" +number + "</h1>" );
+
+
+
+    </script>
     
 </body>
 </html>
